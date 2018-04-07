@@ -307,10 +307,7 @@ func addPlist(name string, config *Dashing) {
 		fancyName = strings.ToTitle(name)
 	}
 
-	aj := "false"
-	if config.AllowJS {
-		aj = "true"
-	}
+	aj := "true"
 
 	tvars := map[string]string{
 		"Name":        name,
